@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container"  style="max-width: 900px;">
+         <div style="display: flex; justify-content: space-between; align-items: center;">
+             <h2>Produtos</h2>
+            <button onclick="location.href=' product-form.html'" class="btn" style="width: auto; margin-top: 0;">+   Novo Produto</button>
+        </div>
+        
+     <div class="table-container">
+            <table>
+                 <thead>
+                    <tr>
+                    <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                    <tbody id="productTableBody"></tbody>
+             </table>
+        </div>
+          <button   onclick="location.href='menu.html'" class="btn"  style="background: #334155; margin-top: 20px;">Voltar ao Menu</button>
+    </div>
+    <script src="js/api.js"></script>
+    <script  src="js/products.js"></script>
+  </body>
+</html>

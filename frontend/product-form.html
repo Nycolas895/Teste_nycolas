@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+      <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+    <div class="container" style="max-width: 600px;">
+          <h2>Cadastro de Produto</h2>
+        <p class="subtitle">Preencha as informações dos items.</p>
+        
+    <form id="productForm">
+         <div class="form-grid">
+                <div class="form-group">
+                  <label>codigo (ID)</label>
+                    <input type="number" id="Id" disabled placeholder="Gerado automaticamente">
+                 </div>
+            <div class="form-group">
+                     <label>Cód. de Barras</label>
+                    <input type="text" id="Barcode" maxlength="14" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Descrição</label>
+                <input type="text" id="Description" maxlength="60" required placeholder="Ex: Monitor Gamer 24p">
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Preço de venda</label>
+                    <input type="number" id="SaleValue" step="0.01" placeholder="0,00" required>
+                  </div>
+                <div class="form-group">
+                      <label>Peso bruto</label>
+                    <input type="number" id="GrossWeight" step="0.001" placeholder="0,000" required>
+                </div>
+                <div class="form-group">
+                    <label>Peso Líquido (Kg)</label>
+                    <input type="number" id="NetWeight" step="0.001" placeholder="0,000" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Salvar Produto</button>
+            <button type="button" onclick="location.href='products.html'" class="btn" style="background: #334155;">Cancelar</button>
+
+     </form>
+     </div>
+      <script src="js/api.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

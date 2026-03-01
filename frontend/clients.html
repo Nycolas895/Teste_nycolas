@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes - Sistema</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" style="max-width: 900px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Clientes</h2>
+            <button onclick="location.href='client-form.html'" class="btn" style="width: auto; margin-top: 0;">+ Novo Cliente</button>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cód.</th>
+                        <th>Nome / Fantasia</th>
+                        <th>Documento</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="clientTableBody">
+                    <tr>
+                        <td>01</td>
+                        <td>João da Silva</td>
+                        <td>123.456.789-00</td>
+                        <td class="actions">
+                            <button class="btn-sm btn-view">Visualizar</button>
+                            <button class="btn-sm btn-edit">Editar</button>
+                            <button class="btn-sm btn-del">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button onclick="location.href='menu.html'" class="btn" style="background: #334155; margin-top: 20px;">Voltar ao Menu</button>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/clients.js"></script>
+</body>
+</html>
